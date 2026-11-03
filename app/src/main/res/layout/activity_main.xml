@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000">
+    <com.pedro.library.view.OpenGlView android:id="@+id/glView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:padding="6dp" android:background="#99000000" android:textColor="#fff" android:text="Ready"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="bottom" android:orientation="vertical" android:background="#99000000" android:padding="4dp">
+        <EditText android:id="@+id/url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="rtmp://a.rtmp.youtube.com/live2/STREAM_KEY" android:textColor="#fff" android:textColorHint="#aaa" android:singleLine="true" android:inputType="textUri"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/bLive" style="@style/B" android:text="Go live"/>
+            <Button android:id="@+id/bRec" style="@style/B" android:text="Replay"/>
+            <Button android:id="@+id/bFlip" style="@style/B" android:text="Flip"/>
+            <Button android:id="@+id/bFilter" style="@style/B" android:text="Filter"/>
+            <Button android:id="@+id/bText" style="@style/B" android:text="Text"/>
+            <Button android:id="@+id/bScore" style="@style/B" android:text="Score"/>
+            <Button android:id="@+id/bMic" style="@style/B" android:text="Mic on"/>
+            <Button android:id="@+id/bQ" style="@style/B" android:text="720p"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
